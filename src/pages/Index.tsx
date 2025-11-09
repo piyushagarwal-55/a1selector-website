@@ -18,14 +18,15 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
+       <TrustedCompanies/>
       <StatsSection />
       <SpecializationsSection />
       <JobsSection />
       <XBeesHireWorkflowShort/>
-      <XBeesHireWorkflow/>
+      {/* <XBeesHireWorkflow/> */}
       <WhyChooseTalentBridge />
       <Testimonial/>
-      <TrustedCompanies/>
+     
 
       <Faq/>
       <Footer />

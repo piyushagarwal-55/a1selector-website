@@ -124,9 +124,7 @@ const TrustedCompanies: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Trusted by Leading Companies
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            We're proud to partner with innovative companies across various industries.
-          </p>
+         
         </div>
 
         {/* Scrolling Wrapper */}
