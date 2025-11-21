@@ -40,26 +40,33 @@ const Navigation = () => {
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200' 
-          : 'bg-transparent'
+          : 'bg-white'
       }`}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between py-4">
-        <motion.div 
-          className="flex items-center space-x-3"
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-        >
-          <motion.div 
-            className="w-10 h-10 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-xl flex items-center justify-center shadow-lg"
-            whileHover={{ rotate: 360 }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="text-white font-bold text-lg">A1</span>
-          </motion.div>
-          <a href="/" className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-            A1Selectors
-          </a>
-        </motion.div>
+      <div className="container mx-auto px-1 flex items-center justify-between py-0">
+ <div className="relative flex items-center">
+
+<div className="relative w-[80px] h-[80px] overflow-visible ">
+
+    <img
+      src="/logo2.jpg"
+      alt="Logo"
+     className="absolute inset-0 w-full h-full object-contain pointer-events-none scale-[0.8] rounded-lg"
+    />
+  </div>
+
+  {/* TEXT */}
+  <a
+    href="/"
+    className="ml-2 text-3xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 
+               bg-clip-text text-transparent tracking-wide"
+  >
+    A1&nbsp;&nbsp;Selectors
+  </a>
+
+</div>
+
+
         
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
