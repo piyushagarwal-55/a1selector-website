@@ -48,7 +48,9 @@ import {
 
   HeartHandshake,
 
-  Eye
+  Eye,
+
+  Shield
 
 } from "lucide-react";
 
@@ -912,6 +914,248 @@ const Employers = () => {
 
 
 
+
+      {/* Company Showcase Sections */}
+      
+      {/* Fortune 500 Companies Section */}
+      <section className="py-20 bg-gradient-to-br from-emerald-50 via-white to-teal-50 relative overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              
+              {/* Content */}
+              <div className="space-y-8">
+                <div>
+                  <Badge className="mb-4 bg-emerald-100 text-emerald-700 border-0 px-4 py-2">
+                    <Building className="w-4 h-4 mr-2" />
+                    Fortune 500 Partners
+                  </Badge>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Trusted by Global <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Industry Leaders</span>
+                  </h2>
+                  <p className="text-xl text-gray-600 leading-relaxed">
+                    We partner with Fortune 500 companies across diverse industries to build world-class teams. Our expertise in executive search and strategic hiring has helped global corporations transform their workforce and achieve unprecedented growth.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  {[
+                    { icon: Target, text: "C-Suite Executive Placement", desc: "Senior leadership recruitment for strategic positions" },
+                    { icon: TrendingUp, text: "Scalable Hiring Solutions", desc: "End-to-end recruitment for rapid expansion" },
+                   
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-4 p-4 bg-white/70 backdrop-blur-sm rounded-xl border border-emerald-100 hover:border-emerald-300 transition-all duration-300 group">
+                      <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <item.icon className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">{item.text}</h4>
+                        <p className="text-gray-600 text-sm">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+             
+              </div>
+
+              {/* Image */}
+              <div className="relative">
+                <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-white/50 transform hover:scale-105 transition-transform duration-500">
+                  <img
+                    src="/companies1.jpg"
+                    alt="Fortune 500 Companies Partnership"
+                    className="w-full h-[400px] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 via-transparent to-transparent"></div>
+                  
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tech Startups Section */}
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              
+              {/* Image */}
+              <div className="relative order-2 lg:order-1">
+                <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-white/50 transform hover:scale-105 transition-transform duration-500">
+                  <img
+                    src="/companies2.jpg"
+                    alt="Tech Startups and Innovation"
+                    className="w-full h-[400px] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-teal-900/20 via-transparent to-transparent"></div>
+                  
+           
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="space-y-8 order-1 lg:order-2">
+                <div>
+                  <Badge className="mb-4 bg-teal-100 text-teal-700 border-0 px-4 py-2">
+                    <TrendingUp className="w-4 h-4 mr-2" />
+                    Startup Ecosystem
+                  </Badge>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Fueling <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">Innovation</span> & Growth
+                  </h2>
+                  <p className="text-xl text-gray-600 leading-relaxed">
+                    From seed-stage startups to unicorn companies, we understand the unique talent needs of fast-growing tech companies. Our agile recruitment approach helps startups build exceptional teams while scaling rapidly in competitive markets.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  {[
+                    { icon: Users, text: "Founding Team Assembly", desc: "Building core teams for early-stage startups" },
+                    { icon: Briefcase, text: "Technical Talent Acquisition", desc: "Engineers, developers, and tech specialists" },
+                  
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-4 p-4 bg-gray-50/70 backdrop-blur-sm rounded-xl border border-gray-200 hover:border-teal-300 transition-all duration-300 group">
+                      <div className="w-10 h-10 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <item.icon className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">{item.text}</h4>
+                        <p className="text-gray-600 text-sm">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Healthcare & Life Sciences Section */}
+      <section className="py-20 bg-gradient-to-br from-cyan-50 via-white to-blue-50 relative overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              
+              {/* Content */}
+              <div className="space-y-8">
+                <div>
+                  <Badge className="mb-4 bg-cyan-100 text-cyan-700 border-0 px-4 py-2">
+                    <HeartHandshake className="w-4 h-4 mr-2" />
+                    Healthcare Excellence
+                  </Badge>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Advancing <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Healthcare</span> Innovation
+                  </h2>
+                  <p className="text-xl text-gray-600 leading-relaxed">
+                    We specialize in recruiting top-tier healthcare professionals, from clinical specialists to biotech researchers. Our deep understanding of healthcare regulations, compliance requirements, and industry trends ensures perfect matches for critical roles.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  {[
+                    { icon: UserCheck, text: "Clinical Specialists", desc: "Board-certified physicians and healthcare practitioners" },
+                    { icon: Search, text: "Research & Development", desc: "Scientists, researchers, and R&D professionals" },
+                  
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-4 p-4 bg-white/70 backdrop-blur-sm rounded-xl border border-cyan-100 hover:border-cyan-300 transition-all duration-300 group">
+                      <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <item.icon className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">{item.text}</h4>
+                        <p className="text-gray-600 text-sm">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+              
+              </div>
+
+              {/* Image */}
+              <div className="relative">
+                <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-white/50 transform hover:scale-105 transition-transform duration-500">
+                  <img
+                    src="/companies3.jpg"
+                    alt="Healthcare and Life Sciences"
+                    className="w-full h-[400px] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/20 via-transparent to-transparent"></div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Financial Services Section */}
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              
+              {/* Image */}
+              <div className="relative order-2 lg:order-1">
+                <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-white/50 transform hover:scale-105 transition-transform duration-500">
+                  <img
+                    src="/companies4.jpg"
+                    alt="Financial Services and Banking"
+                    className="w-full h-[400px] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 via-transparent to-transparent"></div>
+                  
+               
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="space-y-8 order-1 lg:order-2">
+                <div>
+                  <Badge className="mb-4 bg-blue-100 text-blue-700 border-0 px-4 py-2">
+                    <TrendingUp className="w-4 h-4 mr-2" />
+                    Financial Services
+                  </Badge>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Excellence in <span className="bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">Financial</span> Recruitment
+                  </h2>
+                  <p className="text-xl text-gray-600 leading-relaxed">
+                    From investment banking to fintech startups, we connect financial institutions with exceptional talent. Our expertise spans traditional banking, wealth management, insurance, and emerging financial technologies, ensuring compliance and cultural fit.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  {[
+                    { icon: Target, text: "Investment Banking", desc: "Senior bankers, analysts, and portfolio managers" },
+                    { icon: Shield, text: "Risk & Compliance", desc: "Risk management and regulatory compliance experts" },
+                    
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-4 p-4 bg-gray-50/70 backdrop-blur-sm rounded-xl border border-gray-200 hover:border-blue-300 transition-all duration-300 group">
+                      <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-emerald-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <item.icon className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">{item.text}</h4>
+                        <p className="text-gray-600 text-sm">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hiring Process Section */}
 
       <section className="py-20 bg-white relative overflow-hidden">
@@ -1023,14 +1267,11 @@ const Employers = () => {
         </div>
 
       </section>
-
      
 
 
 
-      {/* CTA Section */}
-
-
+     
 
 
 
